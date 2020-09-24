@@ -1,0 +1,56 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: auto;
+  width: 80%;
+  max-width: 60rem;
+  font-family: sans-serif;
+}
+
+header {
+  margin: 4rem auto 2rem auto;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 6px;
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+main h2 {
+  margin: 2rem auto;
+}
+
+main p {
+  line-height: 1.6;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid 2px #000;
+}
+
+table th, table td {
+  padding: 6px;
+  border: dashed 1px #000;
+}
+
+main hr {
+  margin: 2rem auto auto auto;
+}
+
+main button {
+  border-style: none;
+  background: linear-gradient(45deg, #3ab5b0 0%, #3d99be 100%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+main button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
