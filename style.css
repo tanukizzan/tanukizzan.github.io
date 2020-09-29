@@ -5,7 +5,7 @@ html {
 body {
   margin: auto;
   width: 80%;
-  max-width: 60rem;
+  max-width: 40rem;
   cursor: default;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;;
   color: #222;
@@ -28,10 +28,10 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #0000ff;
 }
 
 article h3 {
-  display: inline-block;
   margin: 1.2rem 5px 1.2rem auto;
 }
 
@@ -39,7 +39,7 @@ article h3:hover, a:hover {
   text-decoration: underline;
 }
 
-article .pc-smp, article .dark {
+article .device, article .dark {
   display: inline-block;
   border-radius: 5px;
   margin-right: 5px;
@@ -48,7 +48,7 @@ article .pc-smp, article .dark {
   font-size: 0.9rem;
 }
 
-article .pc-smp {
+article .device {
   background: #56317a;
 }
 
@@ -71,10 +71,6 @@ article p {
 table {
   border-collapse: collapse;
   border: solid 2px #222;
-  /* display: block;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch; */
 }
 
 table th, table td {
@@ -106,8 +102,20 @@ button:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (min-width: 1280px) {
-  .smp-br {
-    display: none;
+/* ダークモード */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1f1f1f;
+    color: #fff;
+  }
+  a {
+    color: #ffff00;
+  }
+  article .dark {
+    background: #fff;
+    color: #1f1f1f;
+  }
+  table, table th, table td {
+    border-color: #fff;
   }
 }
