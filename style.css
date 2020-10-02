@@ -7,7 +7,7 @@ body {
   width: 80%;
   max-width: 40rem;
   cursor: default;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: #222;
 }
 
@@ -25,6 +25,36 @@ header::after, hr::before {
 h2 {
   margin: 2rem auto;
 }
+
+/* カード */
+.card {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(45deg, #3d99be 0%, #3ab5b0 100%);
+  max-width: 20rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background: #fff;
+}
+
+.text {
+  margin-top: 1.2em;
+  color: #fff;
+}
+
+.follow-icon {
+  margin: 1.2em 0;
+}
+
+.icon {
+  margin: 0 0.7em;
+  font-size: 2em;
+  color: #fff;
+}
+
 
 a {
   text-decoration: none;
@@ -56,8 +86,9 @@ article .dark {
   background: #1f1f1f;
 }
 
-img {
+img:not(.card-img), .card {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 p {
@@ -78,6 +109,10 @@ table th, table td {
   border: dashed 1px #222;
 }
 
+tr:nth-child(even) {
+  background: rgba(58, 181, 176, 0.3);
+}
+
 .skill {
   overflow: auto;
   white-space: nowrap;
@@ -86,20 +121,6 @@ table th, table td {
 hr {
   margin-top: 1.5rem;
   border: none;
-}
-
-button {
-  border-style: none;
-  background: linear-gradient(45deg, #3d99be 0%, #3ab5b0 100%);
-  padding: 10px 15px;
-  margin: 0 5px 5px 0;
-  color: #fff;
-  border-radius: 5px;
-}
-
-button:hover {
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ダークモード */
