@@ -1,5 +1,5 @@
-# Tanukizzan's Portfolio
+# Tanukizzan Apps
 
-たぬきっつぁんのポートフォリオサイトです。
+たぬきっつぁんが作ったWebアプリ一覧です。
 
-https://tanukizzan.github.io
+https://app.tanukizzan.com

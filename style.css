@@ -5,7 +5,6 @@ html {
 body {
   margin: auto;
   width: 80%;
-  max-width: 40rem;
   cursor: default;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: #222;
@@ -22,27 +21,77 @@ header::after, hr::before {
   background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 
-h2 {
-  margin: 2rem auto;
+p {
+  line-height: 1.6;
+  margin-top: 0;
 }
 
-/* カード */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 1.5rem;
+  border: none;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
 .card {
+  position: relative;
   display: inline-block;
   text-align: center;
   background: linear-gradient(45deg, #3d99be 0%, #3ab5b0 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   max-width: 20rem;
+  padding: 1em;
+}
+
+.card a:not(.icon) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card a:not(.icon):hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-img {
   width: 100%;
-  border-radius: 5px 5px 0 0;
-  background: #fff;
+  border-radius: 5px;
 }
 
 .text {
   margin-top: 1.2em;
   color: #fff;
+  font-size: 1.1rem;
+}
+
+.device, .dark {
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.device {
+  background: #56317a;
+}
+
+.dark {
+  background: #1f1f1f;
 }
 
 .follow-icon {
@@ -53,74 +102,7 @@ h2 {
   margin: 0 0.7em;
   font-size: 2em;
   color: #fff;
-}
-
-
-a {
   text-decoration: none;
-  color: #0000ff;
-}
-
-article h3 {
-  margin: 1.2rem 5px 1.2rem auto;
-}
-
-article h3:hover, a:hover {
-  text-decoration: underline;
-}
-
-article .device, article .dark {
-  display: inline-block;
-  border-radius: 5px;
-  margin-right: 5px;
-  padding: 5px 10px;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-article .device {
-  background: #56317a;
-}
-
-article .dark {
-  background: #1f1f1f;
-}
-
-img:not(.card-img), .card {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-}
-
-p {
-  line-height: 1.6;
-}
-
-article p {
-  margin-top: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border: solid 2px #222;
-}
-
-table th, table td {
-  padding: 6px;
-  border: dashed 1px #222;
-}
-
-tr:nth-child(even) {
-  background: rgba(58, 181, 176, 0.3);
-}
-
-.skill {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-hr {
-  margin-top: 1.5rem;
-  border: none;
 }
 
 /* ダークモード */
@@ -128,15 +110,5 @@ hr {
   body {
     background: #1f1f1f;
     color: #fff;
-  }
-  a {
-    color: #ffff00;
-  }
-  article .dark {
-    background: #fff;
-    color: #1f1f1f;
-  }
-  table, table th, table td {
-    border-color: #fff;
   }
 }
