@@ -53,13 +53,12 @@ article {
   display: inline-block;
   text-align: center;
   background: linear-gradient(45deg, #3d99be 0%, #3ab5b0 100%);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   max-width: 20rem;
   padding: 1em;
 }
 
-.card a:not(.icon) {
+.card a {
   position: absolute;
   top: 0;
   left: 0;
@@ -67,8 +66,9 @@ article {
   width: 100%;
 }
 
-.card a:not(.icon):hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.card:hover .card-img {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  transition: .1s;
 }
 
 .card-img {
@@ -82,7 +82,7 @@ article {
   font-size: 1.1rem;
 }
 
-.device, .dark {
+.device, .dark, .type {
   display: inline-block;
   border-radius: 5px;
   margin-right: 5px;
@@ -92,11 +92,15 @@ article {
 }
 
 .device {
-  background: #56317a;
+  background: #9400d3;
 }
 
 .dark {
   background: #1f1f1f;
+}
+
+.type {
+  background: #ff8c00;
 }
 
 .follow-icon {
