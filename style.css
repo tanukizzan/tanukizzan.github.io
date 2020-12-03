@@ -1,6 +1,4 @@
-html {
-  font-size: 18px;
-}
+html {font-size: 18px;}
 
 body {
   margin: auto;
@@ -15,9 +13,7 @@ header {
   margin: 4rem auto 2rem auto;
 }
 
-header, footer {
-  text-align: center;
-}
+header, footer {text-align: center;}
 
 header::after, hr::before {
   content: "";
@@ -91,32 +87,9 @@ article {
   font-size: 0.9rem;
 }
 
-.device {
-  background: #56317a;
-}
-
-.dark {
-  background: #1f1f1f;
-}
-
-.type {
-  background: #ff1493;
-}
-
-.follow-icon {
-  margin: 1.2em 0;
-}
-
-.icon {
-  display: inline-block;
-  margin: 0 0.5em;
-  padding: 0.3em;
-  text-decoration: none;
-}
-
-.icon:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
+.device {background: #56317a;}
+.dark {background: #1f1f1f;}
+.type {background: #ff1493;}
 
 /* ダークモード */
 @media (prefers-color-scheme: dark) {
