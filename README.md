@@ -1,5 +1,5 @@
-# たぬきっつぁんアプリ集
+# About Tanukizzan
 
-たぬきっつぁんが作ったWebアプリ一覧です。
+たぬきっつぁんが作ったWebアプリ一覧兼ポートフォリオです。
 
 https://app.tanukizzan.com
