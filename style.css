@@ -36,8 +36,7 @@ header h2 {
 
 /* メインエリア */
 main {
-  width: 90%;
-  max-width: 70rem;
+  width: 80%;
   margin: 5rem auto;
 }
 
@@ -125,9 +124,3 @@ footer a {
 footer a .hover {display: none;}
 footer a:hover .normal {display: none;}
 footer a:hover .hover {display: block;}
-
-/* スマホ */
-@media screen and (max-width: 767px) {
-  .about-area h2 {margin-bottom: 1rem;}
-  .about {width: 100%;}
-}
