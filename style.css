@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -7,8 +7,31 @@ body {
   margin: auto;
   cursor: default;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  color: #333;
-  background: #f3f3f3;
+  color: #fff;
+  background: linear-gradient(to bottom, #c0c6c9, #999999);
+}
+
+/* ヘッダー */
+header, main .text, footer {text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);}
+
+header {
+  text-align: center;
+  font-weight: 900;
+  color: #ffd900;
+  margin: 3rem 0;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #ffd900;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
 }
 
 /* メインエリア */
@@ -16,15 +39,6 @@ main {
   width: 90%;
   max-width: 70rem;
   margin: 5rem auto;
-}
-
-main h2 {
-  letter-spacing: 2px;
-  font-size: 2.5rem;
-  margin: 5rem 0;
-  text-align: center;
-  font-weight: 400;
-  color: #1f7299;
 }
 
 /* カードエリア */
@@ -41,7 +55,7 @@ main h2 {
   text-align: center;
   background: transparent;
   border-radius: 5px;
-  max-width: 20rem;
+  max-width: 18rem;
   overflow: hidden;
 }
 
@@ -61,23 +75,22 @@ main h2 {
 .card-img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 50px 50px -50px #1f7299;
+  box-shadow: 0 50px 50px -50px #ffd900;
 }
 
 .card-img, .card :not(.card-img) {transition: all 0.5s ease;}
 
-.card:hover :not(.card-img) {
-  opacity: 0.8;
-}
+.card:hover :not(.card-img) {opacity: 0.8;}
 
 .card:hover .card-img {
-  box-shadow: 0 50px 50px -40px #1f7299;
+  box-shadow: 0 50px 50px -40px #ffd900;
   transform: translateY(5px);
 }
 
+.card:hover .text {text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+
 .article .text {
   margin-top: 1.2em;
-  color: #333;
   font-size: 1.1rem;
 }
 
@@ -105,7 +118,7 @@ footer {
 }
 
 footer a {
-  color: #1f7299;
+  color: #ffd900;
   text-decoration: none;
 }
 
