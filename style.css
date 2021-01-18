@@ -48,14 +48,16 @@ main {
   justify-content: center;
 }
 
+.caption {
+  margin: auto auto 2rem auto;
+  max-width: 24rem;
+}
+
 .card {
   position: relative;
-  display: inline-block;
   text-align: center;
   background: transparent;
   border-radius: 5px;
-  max-width: 18rem;
-  overflow: hidden;
 }
 
 .card p {
@@ -87,11 +89,25 @@ main {
   transform: translateY(5px);
 }
 
-.card:hover .text {text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+.card:hover .new, .card:hover .text {text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+
+.caption .text {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.caption .new {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
 
 .article .text {
   margin-top: 1.2em;
   font-size: 1.1rem;
+}
+
+.new {
+  color: #ff0000;
 }
 
 .device, .dark, .type {
@@ -125,3 +141,13 @@ footer a {
 footer a .hover {display: none;}
 footer a:hover .normal {display: none;}
 footer a:hover .hover {display: block;}
+
+@media screen and (min-width: 500px) {
+  .caption img {
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+}
