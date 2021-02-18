@@ -156,7 +156,7 @@ main h2 {
   font-size: 1.2rem;
 }
 
-.device, .dark, .type {
+.device, .dark, .mic, .type {
   display: inline-block;
   border-radius: 5px;
   margin-right: 5px;
@@ -167,6 +167,7 @@ main h2 {
 
 .device {background: #1f7299;}
 .dark {background: #1f1f1f;}
+.mic {background: #ff0000;}
 .type {background: #ff1493;}
 
 main .cp {
@@ -180,11 +181,9 @@ main .cp {
   }
   .sidebar, main {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
-  .sidebar .about-area {
-    width: 90%;
-    max-width: 28rem;
-    margin: auto auto 2rem auto;
+  .sidebar {
+    padding: 2rem;
   }
 }
