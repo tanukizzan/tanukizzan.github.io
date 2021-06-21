@@ -118,7 +118,7 @@ header img {
 
 footer .description p i {margin-right: 5px;}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .profile-area {
     display: flex;
     justify-content: center;
@@ -136,15 +136,19 @@ footer .description p i {margin-right: 5px;}
     margin: 2rem 0;
   }
   footer p {margin: 0;}
-  footer .description {display: flex;}
+  footer .description {
+    display: flex;
+    flex-wrap: wrap;
+  }
   footer .description p {margin: auto 5px;}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .card img, footer, footer .description {
     display: block;
   }
   .profile-area .img-area img {
-    width: 100%;
+    width: 50%;
+    margin: auto;
   }
 }
