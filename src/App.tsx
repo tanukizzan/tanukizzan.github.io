@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         {
           Card.map((item: Item) => (
-            <div key={item.id} className='max-w-sm rounded overflow-hidden shadow-lg'>
+            <div key={item.id} className='max-w-sm rounded overflow-hidden shadow-lg m-auto'>
               <a href={item.url}>
                 <img src={item.image} alt={item.title} className='w-full' />
                 <h2 className='font-bold text-xl px-6 py-4'>{item.title}</h2>
